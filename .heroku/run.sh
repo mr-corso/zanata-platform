@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Calling zanata build script"
+echo "Build Zanata"
 
-#sh ./build --server -iQ
+./mvnw clean install -DskipTests -DskipArqTests -DskipFuncTests -Dappserver=wildfly8 -am -pl server/zanata-war
