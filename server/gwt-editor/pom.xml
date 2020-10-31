@@ -229,9 +229,9 @@
               <filesets>
                 <fileset>
                   <directory>target/gwt-unitCache</directory>
-                  <excludeDefaultDirectories>true</excludeDefaultDirectories>
                 </fileset>
               </filesets>
+              <excludeDefaultDirectories>true</excludeDefaultDirectories>
             </configuration>
           </execution>
         </executions>
