@@ -59,7 +59,7 @@
             </executions>
         </plugin>
       </plugins>
-    <pluginManagement>
+    </pluginManagement>
     <plugins>
       <!--
         Uses maven-site-plugin to generate all modules' doc in root directory
