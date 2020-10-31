@@ -26,8 +26,38 @@
     <skipFuncTests>true</skipFuncTests>
     <appserver>wildfly8</appserver>
   </properties>
-
+  
   <build>
+    <pluginManagement>
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.4.1</version>
+        <executions>
+            <execution>
+                <id>auto-clean</id>
+                <phase>install</phase>
+                <goals>
+                    <goal>clean</goal>
+                </goals>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>target/</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <excludes>
+                                <exclude>*.war</exclude>
+                            </excludes>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                    <excludeDefaultDirectories>true</excludeDefaultDirectories>
+                </configuration>
+            </execution>
+          </executions>
+      </plugin>
+    <pluginManagement>
     <plugins>
       <!--
         Uses maven-site-plugin to generate all modules' doc in root directory
