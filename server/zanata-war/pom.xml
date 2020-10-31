@@ -196,31 +196,6 @@
           </filesets>
           <followSymLinks>false</followSymLinks>
         </configuration>
-        <executions>
-          <execution>
-              <id>auto-clean</id>
-              <phase>install</phase>
-              <goals>
-                  <goal>clean</goal>
-              </goals>
-              <configuration>
-                  <filesets>
-                      <fileset>
-                          <directory>target/</directory>
-                          <includes>
-                              <include>**/*</include>
-                          </includes>
-                          <excludes>
-                              <exclude>dependency/*.jar</exclude>
-                              <exclude>*.war</exclude>
-                          </excludes>
-                          <followSymlinks>false</followSymlinks>
-                      </fileset>
-                  </filesets>
-                  <excludeDefaultDirectories>true</excludeDefaultDirectories>
-              </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
