@@ -2,4 +2,4 @@
 
 echo "Calling zanata build script"
 
-sh ./build --server -iQ
+#sh ./build --server -iQ
