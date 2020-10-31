@@ -21,38 +21,6 @@
   </scm>
   
   <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>2.4.1</version>
-          <executions>
-              <execution>
-                  <id>auto-clean</id>
-                  <phase>install</phase>
-                  <goals>
-                      <goal>clean</goal>
-                  </goals>
-                  <configuration>
-                      <filesets>
-                          <fileset>
-                              <directory>target/</directory>
-                              <includes>
-                                  <include>**/*</include>
-                              </includes>
-                              <excludes>
-                                  <exclude>*.war</exclude>
-                              </excludes>
-                              <followSymlinks>false</followSymlinks>
-                          </fileset>
-                      </filesets>
-                      <excludeDefaultDirectories>true</excludeDefaultDirectories>
-                  </configuration>
-              </execution>
-            </executions>
-        </plugin>
-      </plugins>
-    </pluginManagement>
     <plugins>
       <!--
         Uses maven-site-plugin to generate all modules' doc in root directory
@@ -77,34 +45,6 @@
               <goal>site</goal>
             </goals>
             <phase>site</phase>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <executions>
-          <execution>
-              <id>auto-clean</id>
-              <phase>install</phase>
-              <goals>
-                  <goal>clean</goal>
-              </goals>
-              <configuration>
-                  <filesets>
-                      <fileset>
-                          <directory>target/</directory>
-                          <includes>
-                              <include>**/*</include>
-                          </includes>
-                          <excludes>
-                              <exclude>dependency/*.jar</exclude>
-                              <exclude>*.war</exclude>
-                          </excludes>
-                          <followSymlinks>false</followSymlinks>
-                      </fileset>
-                  </filesets>
-                  <excludeDefaultDirectories>true</excludeDefaultDirectories>
-              </configuration>
           </execution>
         </executions>
       </plugin>
