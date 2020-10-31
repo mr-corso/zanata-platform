@@ -19,6 +19,13 @@
     <developerConnection>scm:git:git@github.com:zanata/zanata-platform.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
+  
+  <properties>
+    <skipTests>true</skipTests>
+    <skipArqTests>true</skipArqTests>
+    <skipFuncTests>true</skipFuncTests>
+    <appserver>wildfly8</appserver>
+  </properties>
 
   <build>
     <plugins>
