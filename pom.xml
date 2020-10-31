@@ -20,13 +20,6 @@
     <tag>HEAD</tag>
   </scm>
   
-  <properties>
-    <skipTests>true</skipTests>
-    <skipArqTests>true</skipArqTests>
-    <skipFuncTests>true</skipFuncTests>
-    <appserver>wildfly8</appserver>
-  </properties>
-  
   <build>
     <pluginManagement>
       <plugins>
