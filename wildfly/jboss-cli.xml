@@ -36,7 +36,7 @@
 
     <!-- whether to resolve system properties specified as command argument or operation parameter values
                   in the CLI VM before sending the operation requests to the controller -->
-    <resolve-parameter-values>false</resolve-parameter-values>
+    <resolve-parameter-values>true</resolve-parameter-values>
 
 
     <!-- Whether to write info and error messages to the terminal output -->
