@@ -39,9 +39,10 @@
         <property name="jboss.as.management.blocking.timeout" value="1000"/>
         <property name="zanata.security.authpolicy.internal" value="zanata.internal"/>
         <property name="zanata.security.authpolicy.openid" value="zanata.openid"/>
-        <!--<property name="zanata.security.adminusers" value=""/>-->
+        <property name="zanata.security.adminusers" value="admin"/>
         <property name="zanata.email.defaultfromaddress" value="no-reply@zanata.org"/>
         <property name="zanata.file.directory" value="${user.home}/zanata/files"/>
+        <property name="zanata.home" value="${user.home}/zanata/files"/>
     </system-properties>
 
 
