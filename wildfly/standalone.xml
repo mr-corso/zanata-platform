@@ -188,7 +188,7 @@
         <subsystem xmlns="urn:jboss:domain:datasources:4.0">
             <datasources>
                 <datasource jndi-name="java:jboss/datasources/zanataDatasource" pool-name="zanataDatasource" enabled="true" use-ccm="true">
-                    <connection-url>${CLEARDB_DATABASE_URL}</connection-url>
+                    <connection-url>${env.CLEARDB_DATABASE_URL}</connection-url>
                     <driver-class>com.mysql.jdbc.Driver</driver-class>
                     <driver>mysql-connector-java.jar</driver>
                     <pool>
@@ -197,8 +197,8 @@
                         <flush-strategy>FailingConnectionOnly</flush-strategy>
                     </pool>
                     <security>
-                        <user-name>${DB_USER}</user-name>
-                        <password>${DB_PASSWORD}</password>
+                        <user-name>${env.DB_USER}</user-name>
+                        <password>${env.DB_PASSWORD}</password>
                     </security>
                     <statement>
                         <track-statements>NOWARN</track-statements>
